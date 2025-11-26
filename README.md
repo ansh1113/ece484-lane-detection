@@ -8,7 +8,7 @@
 
 **Binary lane segmentation using ENet architecture with custom dataset - UIUC ECE 484 Safe Autonomy**
 
-## 🎯 Key Results
+## Key Results
 
 - ✅ **High Accuracy** - Validation loss: 0.0014 after 10 epochs
 - ✅ **Real-time Performance** - Inference at 30+ FPS on GPU
@@ -18,7 +18,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Network Architecture](#network-architecture)
@@ -69,7 +69,7 @@ Lane Following Controller
 
 ---
 
-## 🏗️ Network Architecture
+## Network Architecture
 
 ### Simplified ENet
 
@@ -128,7 +128,7 @@ ConvTranspose2d(kernel_size=3, stride=2, padding=1)
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 ### Data Collection
 
@@ -181,7 +181,7 @@ Applied during training to improve generalization:
 
 ---
 
-## 🎓 Training Pipeline
+## Training Pipeline
 
 ### Loss Function
 
@@ -244,7 +244,7 @@ for epoch in range(NUM_EPOCHS):
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 ```bash
@@ -296,7 +296,7 @@ source install/setup.bash
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### 1. Data Collection (Optional)
 ```bash
@@ -381,7 +381,7 @@ ros2 run rqt_image_view rqt_image_view
 
 ---
 
-## 📊 Experimental Results
+## Experimental Results
 
 ### Training Curves
 
@@ -426,7 +426,7 @@ Epoch 10: Val Loss = 0.0014 ✓
 
 ---
 
-## 🔧 Hyperparameter Tuning
+## Hyperparameter Tuning
 
 ### Batch Size Selection
 
@@ -492,9 +492,9 @@ Epoch 20: Val Loss = 0.0013 (no improvement)
 
 ---
 
-## 🌦️ Domain Adaptation Challenge
+## Domain Adaptation Challenge
 
-### Problem: Sunny → Snowy Conditions
+### Problem: Snowy Conditions
 
 **Challenge**: Model trained on sunny-day images fails on snowy-day images due to:
 - Low contrast (snow-covered lanes)
@@ -542,7 +542,7 @@ model.train_on_snowy_data(epochs=5, lr=0.0001)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 ece484-lane-detection/
 ├── src/
@@ -579,27 +579,15 @@ ece484-lane-detection/
 
 ---
 
-## 📚 Course Context
+## Course Context
 
 **Course**: ECE 484 - Principles of Safe Autonomy  
 **Institution**: University of Illinois Urbana-Champaign  
 **Semester**: Fall 2025  
-**Project Type**: Machine Problem 1 (Group Project)  
-**Team**: Autoshield
-
+**Project Type**: Machine Problem 1
 ---
 
-## 👥 Team
-
-**Team Autoshield**
-- Ansh Bhansali - anshb3@illinois.edu
-- Het Patel - hcp4@illinois.edu
-- Sunny Deshpande - sunnynd2@illinois.edu
-- Keisuke Ogawa - ogawa3@illinois.edu
-
----
-
-## 🎥 Demo Videos
+## Demo Videos
 
 **Video Links**: [Google Drive - MP1 Demos](https://drive.google.com/drive/folders/1tji1z8HDMwo6BdeU8uxJp2NpQ15aoZ15)
 
@@ -611,7 +599,7 @@ ece484-lane-detection/
 
 ---
 
-## 📖 Academic Integrity Statement
+## Academic Integrity Statement
 
 This repository contains coursework from ECE 484 - Principles of Safe Autonomy at UIUC.  
 Shared for portfolio and educational purposes after course completion.
@@ -625,22 +613,21 @@ Violations of academic integrity policies will be reported.
 
 ---
 
-## 📝 License
+## License
 
 MIT License - See [LICENSE](LICENSE) for details
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - ECE 484 course staff for simulation environment and guidance
 - UIUC Robotics Lab for computational resources
-- Team Autoshield members for data collection and collaboration
 - PyTorch team for excellent deep learning framework
 
 ---
 
-## 📞 Contact
+## Contact
 
 For questions about this implementation:
 - **Ansh Bhansali**: anshbhansali5@gmail.com
